@@ -6,8 +6,8 @@ int n;
 bool check(int v , int k ){
 	return true;
 }
-void solution(int x[]){
-	for(int i=0; i<n;i++){
+void solution(){
+	for(int i=1; i<=n;i++){
 		cout<<x[i];
 	}
 	cout<<endl;
@@ -16,7 +16,7 @@ void Try(int k ){
 	for(int v = 0; v<=1;v++){
 		if(check(v,k)){
 			x[k]=v;
-			if(k==n) solution(x);
+			if(k==n) solution();
 			else Try(k+1);
 		}
 	}
